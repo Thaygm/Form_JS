@@ -31,7 +31,7 @@ form.addEventListener('submit', function (e) {
         endereço.value = '';
         Senha.value = '';
     } else {
-        Senha.style.border = '1px solid red';
+        Senha.style.border = '1px solid ##F508B1';
         document.querySelector('.error-message').style.display = 'block';
     }
 })

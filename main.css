@@ -28,7 +28,7 @@ button {
 }
 
 button {
-    background-color: #E72FB2;
+    background-color: #F980D6;
     border: none;
     text-transform: uppercase;
     color: #fff;
@@ -39,11 +39,11 @@ button {
 }
 
 button:hover {
-    background-color: #E72FB2;
+    background-color: #F980D6;
 }
 
 .success-message {
-    background-color: #E72FB2;
+    background-color: #F980D6;
     padding: 16px;
     color: #fff;
     display: none;
@@ -52,14 +52,14 @@ button:hover {
 .error-message {
     font-size: 12px;
     padding: 8px;
-    background-color: red;
+    background-color: #F508B1
     color: #fff;
     margin-bottom: 8px;
     display: none;
 }
 
 input.error {
-    color: red;
-    border-color: red;
-    outline-color: red;
+    color: ##F508B1;
+    border-color: ##F508B1;
+    outline-color: ##F508B1;
 }
