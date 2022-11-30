@@ -1,4 +1,6 @@
 const form = document.getElementById('register');
+const Senha = document.getElementById('Pass');
+let formEvalido = false;
 
 function validaSenha(Password) {
     let SenhaValida = Password;
@@ -14,12 +16,13 @@ form.addEventListener('submit', function (e) {
     const email = document.getElementById('Mail');
     const dataNascimento = document.getElementById('Bday');
     const endereço = document.getElementById('Address');
-    const Senha = document.getElementById('Pass');
-    const MensagemSucesso = `Seu registro foi um sucesso, ${primeiroNome.value}, um email de confirmação foi enviado para ${Mail.value}`;
+    const mensagemSucesso = `Seu registro foi um sucesso, ${primeiroNome.value}, um email de confirmação foi enviado para ${Mail.value}`;
 
     formEvalido = validaSenha(Senha.value)
     if (formEvalido) {
-        alert(MensagemSucesso);
+        const containerMensagemSucesso = document.querySelector('.success-message');
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display = 'block';
 
         primeiroNome.value = '';
         sobrenome.value = '';
@@ -28,8 +31,22 @@ form.addEventListener('submit', function (e) {
         endereço.value = '';
         Senha.value = '';
     } else {
-        alert('Preencha os campos corretamente!');
+        Senha.style.border = '1px solid red';
+        document.querySelector('.error-message').style.display = 'block';
     }
 })
+
+Senha.addEventListener('keyup', function(e) {
+    console.log(e.target.value);
+    formEvalido = validaSenha(e.target.value);
+
+    if (!formEvalido) {
+        Senha.classList.add('error');
+        document.querySelector('.error.message').style.display = 'block';
+    } else {
+        Senha.classList.remove('error');
+        document.querySelector('error-message').style.display = 'none';
+    }
+});
 
 console.log(form);

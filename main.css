@@ -5,8 +5,7 @@
     font-family: sans-serif;
 }
 
-body {
-}
+body {}
 
 .container {
     margin: 80px auto;
@@ -18,7 +17,9 @@ form {
     margin-top: 40px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     display: block;
     padding: 8px;
     margin-bottom: 8px;
@@ -39,4 +40,26 @@ button {
 
 button:hover {
     background-color: #E72FB2;
+}
+
+.success-message {
+    background-color: #E72FB2;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
 }
