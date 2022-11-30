@@ -52,14 +52,13 @@ button:hover {
 .error-message {
     font-size: 12px;
     padding: 8px;
-    background-color: #F508B1
+    background-color: #F906B3;
     color: #fff;
     margin-bottom: 8px;
     display: none;
 }
 
 input.error {
-    color: ##F508B1;
-    border-color: ##F508B1;
-    outline-color: ##F508B1;
-}
+    color: #F906B3;
+    border-color: #F906B3;
+    outline-color: #F906B3;
