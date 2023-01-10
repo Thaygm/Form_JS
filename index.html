@@ -1,41 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <h1>F O R M U L Á R I O </h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F O R M U L Á R I O</title>
+    <title>Meu portal de notícias</title>
     <link rel="stylesheet" href="./main.css" />
 </head>
-
 <body>
-    <div class="container">
-        <h1>Nome da Loja</h1>
-        <h2>Registre-se</h2>
-        <form id="register">
-            <input type="text" id="Name" placeholder="Nome" required /> <input type="text" id="LastName"
-                placeholder="Sobrenome" required /><br />
-            <label for="email">Seu Email</label>
-            <input id="Mail" type="email" required />
-            <label for="diaa">Data de Nascimento:</label>
-            <input type="date" id="bday" name="bday" required> <br />
-            <input type="text" id="Address" placeholder="Endereço" required /> <input type="text" id="AdNum"
-                placeholder="Casa/Apartamento" /><br />
-            <input type="tel" id="telefone" placeholder=" Número de Celular (xx) xxxxx-xxxx" minlength="11"
-                maxlength="11" required>
-            <label for="pass">Senha (Mínimo 8 caracteres):</label>
-            <input type="password" id="Pass" name="senha" required><br />
-            <p class="error-message">
-                Sua senha precisa ter no mínimo 8 caracteres
+    <header>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
+                    </li>
+                    <li>
+                        <a href="#travel" title="Ir para a seção de viagem">Viagem</a>
+                    </li>
+                    <li>
+                        <a href="#gastronomy" title="Ir para a seção de gastronomia">Gastronomia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sports">
+        <div class="container">
+            <h2>Esportes</h2>
+        <div class="articles">
+            <article>
+            <img src="http://via.placeholder.com/180x100" alt="Bola de futebol no gramado" />
+            <header>
+                <time class="creation-date">13/07/2022 às 12:35</time>
+            </header>
+            <h3>Grande clássico na noite de hoje</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
             </p>
-            <button type="submit">Registrar</button>
-            <button type="reset">Voltar</button>
-        </form>
-        <p class="success-message"></p>
-    </div>
-    <script src="./main.js"></script>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" alt="Jogador de futebol americano correndo com a bola na mão" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Noite do Superbowl</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" title="Vista aérea de uma quadra de basquete" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Notícia sobre a NBA</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" title="Vista aérea de uma quadra de basquete" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Notícia sobre a NBA</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        </div>
+        </div>
+    </section>
+    <section id="gastronomy">
+        <div class="container">
+            <h2>Gastronomia</h2>
+        <div class="articles">
+            <article>
+            <img src="http://via.placeholder.com/180x100" alt="Prato de massa italiana" />
+            <header>
+                <time class="creation-date">10/11/2022 às 14:35</time>
+            </header>
+            <h3>Chefs italianos desembarcam em São Paulo para Semana gastronômica</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" alt="Prato de comida japonesa" />
+            <header>
+                <time>10/11/2022 às 12:35</time>
+            </header>
+            <h3>1ª Semana de Gastronomia Japonesa chega a SP com jantares e festival de ramen</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" title="Tabua com grande variedade de queijos brasileiros" />
+            <header>
+                <time>10/11/2022 às 12:35</time>
+            </header>
+            <h3>Brasil tem 15 queijos premiados no World Cheese Awards 2022</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/180x100" title="Prato de massa verde com polvo" />
+            <header>
+                <time>10/11/2022 às 12:35</time>
+            </header>
+            <h3>5 restaurantes para conhecer em São Paulo</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        </div>
+        </div>
+    </section>
+    <section id="economy">
+        <div class="container">
+            <h2>Economia</h2>
+        <div class="articles">
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Muitos dólares" />
+                <header>
+                    <time>13/07/2022 às 12:35</time>
+                </header>
+                <h3>Dólar em alta de 0.50%</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Várias notas de euro" />
+                <header>
+                    <time>13/07/2022 às 12:35</time>
+                </header>
+                <h3>Euro em queda de 0.40%</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Extração de petróleo" />
+                <header>
+                    <time>13/07/2022 às 12:35</time>
+                </header>
+                <h3>Alta no preço do barril do petróleo</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+        </div>
+        </div>
+    </section>
+    
+    <section id="travel">
+        <div class="container">
+            <h2>Viagem</h2>
+        <div class="articles">
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Fogos de artifício na orla de Copacabana" />
+                <header>
+                    <time>10/11/2022 às 12:35</time>
+                </header>
+                <h3>Réveillon no Rio de Janeiro: onde passar a virada na Cidade Maravilhosa</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Pessoas sentadas em uma mesa bebendo vinho" />
+                <header>
+                    <time>11/11/2022 às 12:35</time>
+                </header>
+                <h3>Réveillon em São Paulo: de jantar estrelado a festas; confira as opções</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="http://via.placeholder.com/180x100" alt="Vista aérea de piscina de hotel" />
+                <header>
+                    <time>10/11/2022 às 12:35</time>
+                </header>
+                <h3>12 opções de hotéis pelo Brasil para curtir Natal e Reveillon</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+        </div>
+        </div>
+    </section>
 </body>
-
 </html>
